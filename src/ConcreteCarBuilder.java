@@ -1,10 +1,6 @@
 public class ConcreteCarBuilder implements CarBuilder {
 
-    private String type;
-    private String engine;
-    private int seats;
-    private String climateControl;
-    private S
+    Car car;
 
 
     @Override
