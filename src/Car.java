@@ -1,48 +1,32 @@
 public class Car {
-    private String type;
-    private int seats;
-
-    //Stat points
-    private int health;
-    private int durability;
     private int speed;
     private int acceleration;
-
-    public Car(
-        //String naam, String engine, int seats, int health, int durability, int speed, int acceleration
-        ){
-
+    private int health;
+    private int durability;
+  
+    public void setSpeed(int speed) {
+      this.speed = speed;
+    }
+  
+    public void setAcceleration(int acceleration) {
+      this.acceleration = acceleration;
+    }
+  
+    public void setHealth(int health) {
+      this.health = health;
+    }
+  
+    public void setDurability(int durability) {
+      this.durability = durability;
     }
 
-    public void setHealth(int newHealth){
-        this.health = newHealth;
-    }
-
-    public int getHealth(){
-        return this.health;
-    }
-
-    public void setDurability(int newDurability){
-        this.durability = newDurability;
-    }
-
-    public int getDurability(){
-        return this.durability;
-    }
-
-    public void setSpeed(int newSpeed){
-        this.speed = newSpeed;
-    }
-
-    public int setSpeed(){
-        return this.speed;
-    }
-
-    public void setAcceleration(int newAcceleration){
-        this.acceleration = newAcceleration;
-    }
-
-    public int getAcceleration(){
-        return this.acceleration;
-    }
-}
+    public void displayStats() {
+        String border = "==============================";
+        System.out.println(border);
+        System.out.println("Speed: " + speed);
+        System.out.println("Acceleration: " + acceleration);
+        System.out.println("Health: " + health);
+        System.out.println("Durability: " + durability);
+        System.out.println(border);
+      }
+  }
