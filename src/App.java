@@ -9,7 +9,7 @@ public class App {
         builder.setHealth(50);
         builder.setDurability(30);
         Car sportsCar = builder.getResult();
-        sportsCar.displayStats();
+        //sportsCar.displayStats();
     
         // Build an off-road car
         builder = new OffRoadCarBuilder();
@@ -18,6 +18,14 @@ public class App {
         builder.setHealth(50);
         builder.setDurability(30);
         Car offRoadCar = builder.getResult();
-        offRoadCar.displayStats();
+        //offRoadCar.displayStats();
+
+    
+        // Add a spoiler to the sports car
+        CarDecorator sportsCarWithSpoiler = new SpoilerDecorator(sportsCar);
+        //sportsCarWithSpoiler.displayStats();
+
+        CarDecorator offRoadCarwithBobbleHead = new BobbleHeadDecorator(offRoadCar);
+        offRoadCarwithBobbleHead.displayStats();
     }
 }
