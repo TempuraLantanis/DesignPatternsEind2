@@ -3,6 +3,7 @@ public class SportsCarBuilder implements CarBuilder {
   
     public SportsCarBuilder() {
       car = new Car();
+      car.setGps(true); // Only Sports cars have gps
     }
   
     
