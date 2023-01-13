@@ -1,4 +1,7 @@
 public class SportsCarBuilder implements CarBuilder {
+    //Implements another builder that builds a char object with their build functions
+    //modified to demonstrate different builders
+
     private Car car;
   
     public SportsCarBuilder() {
@@ -30,4 +33,15 @@ public class SportsCarBuilder implements CarBuilder {
     public Car getResult() {
       return car;
     }
+
+
+    public void buildCar(int speed, int acceleration, int health, int durability){ // implements a streamlined constructor for the car this can be modified depending on the builder desires
+        setSpeed(speed);
+        setAcceleration(acceleration);
+        setHealth(health);
+        setDurability(durability);
+        getResult();
+
+    }
+
   }
