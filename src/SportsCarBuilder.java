@@ -2,9 +2,6 @@ public class SportsCarBuilder implements CarBuilder {
     //Implements another builder that builds a char object with their build functions
     //modified to demonstrate different builders
 
-
-
-
     private Car car;
   
     public SportsCarBuilder() {

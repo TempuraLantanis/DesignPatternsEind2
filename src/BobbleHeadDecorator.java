@@ -12,8 +12,19 @@ public class BobbleHeadDecorator extends CarDecorator {
   
     private void addBobblehead() {
       System.out.println("Adding a Bobble Head to the car.");
-    }
+
   }
+
+  @Override
+  public void execute(){
+        addBobblehead();
+
+  }
+
+
+}
+
+
   
 
   

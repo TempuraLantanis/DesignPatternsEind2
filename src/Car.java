@@ -1,4 +1,4 @@
-public class Car {
+public class Car implements decoratorInt {
   private int speed;
   private int acceleration;
   private int health;
@@ -52,5 +52,11 @@ public class Car {
       System.out.println("Comfort: " + comfort);
     }
     System.out.println(border);
+  }
+
+
+  @Override
+  public void execute() {
+
   }
 }

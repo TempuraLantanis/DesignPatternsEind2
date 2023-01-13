@@ -1,4 +1,4 @@
-public abstract class CarDecorator extends Car {
+public abstract class CarDecorator extends Car implements decoratorInt {
   protected Car decoratedCar;
 
   public CarDecorator(Car decoratedCar) {
@@ -37,4 +37,11 @@ public abstract class CarDecorator extends Car {
   public void displayStats() {
     decoratedCar.displayStats();
   }
+
+  @Override
+  public void execute() {
+    super.execute();
+  }
+
+
 }

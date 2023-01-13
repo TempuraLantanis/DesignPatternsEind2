@@ -6,7 +6,7 @@ import java.util.ArrayList;
 public class Facade {
     MagicMissile missileSpell = new MagicMissile();
     AetherCore BetelGuese = new AetherCore(300);
-    Source aetherFountain = new Source();
+    Source aetherFountain = new Source(34235);
 
     public void fireCannon(String spell) {
         if(spell == "Magic Missile"){

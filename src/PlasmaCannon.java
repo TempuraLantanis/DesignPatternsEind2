@@ -15,4 +15,8 @@ public class PlasmaCannon extends CarDecorator{
 
     }
 
+    @Override
+    public void execute() {
+        fire();
+    }
 }

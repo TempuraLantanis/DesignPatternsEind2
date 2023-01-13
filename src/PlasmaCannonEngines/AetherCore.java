@@ -2,7 +2,7 @@ package PlasmaCannonEngines;
 
 public class AetherCore {
     int mana;
-    String message = " The Aetherial energies of the Aethercore is radiating from the core";
+    String message = " The Aetherial energies of the Aethercore is radiating";
 
     AetherCore(int mana){
         this.mana = mana;

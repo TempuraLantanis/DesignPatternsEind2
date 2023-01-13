@@ -29,7 +29,19 @@ public class App {
         offRoadCarwithBobbleHead.displayStats();
 
 
+        CarDecorator fullyDecoratedCar = new PlasmaCannon(new BobbleHeadDecorator(sportsCarWithSpoiler));
+
+
         PlasmaCannon sportsCarwithPlasma = new PlasmaCannon(sportsCar);
-        sportsCarwithPlasma.fire();
+
+        PlasmaCannon someCarWithPlasma = new PlasmaCannon(sportsCarwithPlasma);
+
+        System.out.println("=========================");
+
+        someCarWithPlasma.decoratedCar.execute();
+        fullyDecoratedCar.decoratedCar.execute();
+
+
+
     }
 }
