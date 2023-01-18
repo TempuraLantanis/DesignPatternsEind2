@@ -25,21 +25,21 @@ public class App {
         CarDecorator sportsCarWithSpoiler = new SpoilerDecorator(sportsCar);
         //sportsCarWithSpoiler.displayStats();
 
-        CarDecorator offRoadCarwithBobbleHead = new BobbleHeadDecorator(offRoadCar);
-        offRoadCarwithBobbleHead.displayStats();
+        CarDecorator sportsCarWithSpoilerAndBobbleHead = new BobbleHeadDecorator(sportsCarWithSpoiler.getCar());
+        sportsCarWithSpoilerAndBobbleHead.displayStats();
 
 
-        CarDecorator fullyDecoratedCar = new PlasmaCannon(new BobbleHeadDecorator(sportsCarWithSpoiler));
+        // CarDecorator fullyDecoratedCar = new PlasmaCannon(new SpoilerDecorator(new BobbleHeadDecorator(sportsCarWithSpoiler)));
+        // fullyDecoratedCar.displayStats();
 
+        // PlasmaCannon sportsCarwithPlasma = new PlasmaCannon(sportsCar);
 
-        PlasmaCannon sportsCarwithPlasma = new PlasmaCannon(sportsCar);
+        // PlasmaCannon someCarWithPlasma = new PlasmaCannon(sportsCarwithPlasma);
 
-        PlasmaCannon someCarWithPlasma = new PlasmaCannon(sportsCarwithPlasma);
+        // System.out.println("=========================");
 
-        System.out.println("=========================");
-
-        someCarWithPlasma.decoratedCar.execute();
-        fullyDecoratedCar.decoratedCar.execute();
+        // someCarWithPlasma.decoratedCar.execute();
+        // fullyDecoratedCar.decoratedCar.execute();
 
 
 

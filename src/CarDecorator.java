@@ -43,5 +43,9 @@ public abstract class CarDecorator extends Car implements decoratorInt {
     super.execute();
   }
 
+  public Car getCar(){
+    return decoratedCar;
+  }
+
 
 }

@@ -1,7 +1,7 @@
 public class SpoilerDecorator extends CarDecorator implements decoratorInt {
     public SpoilerDecorator(Car decoratedCar) {
       super(decoratedCar);
-      updateStyle(10);
+      decoratedCar.setExtra_style(10);
       addSpoiler();
     }
   
